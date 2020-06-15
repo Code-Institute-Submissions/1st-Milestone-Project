@@ -43,13 +43,13 @@ This way I would no longer have my name displayed anywhere on the website other 
 Wireframes used to crop out the layout of the website (index.html page) for each screen size:
 
 ### Desktop
-![](assets/wireframes-figma/desktop-view.pdf)
+https://github.com/Nor8ie/1st-Milestone-Project/blob/ef5c9175e0e9355385e9929b70864cf69655c1cb/assets/wireframes-figma/desktop-view.pdf
 
 ### Tablet
-![](assets/wireframes-figma/tablet-view.pdf)
+https://github.com/Nor8ie/1st-Milestone-Project/blob/ef5c9175e0e9355385e9929b70864cf69655c1cb/assets/wireframes-figma/tablet-view.pdf
 
 ### Mobile
-![](assets/wireframes-figma/mobile-view.pdf)
+https://github.com/Nor8ie/1st-Milestone-Project/blob/ef5c9175e0e9355385e9929b70864cf69655c1cb/assets/wireframes-figma/mobile-view.pdf
 
 
 ## Features

@@ -42,7 +42,6 @@ body {
 
 .navigation-wrapper {
     padding: 0px;
-    overflow: hidden;
 }
 
 nav ul {
@@ -144,15 +143,11 @@ nav ul {
     box-shadow: 10px 10px 20px;
 }
 
-.carousel-item {
+.carousel-item img {
     height: 100vh;
     width: 100%;
     background-size: cover !important;
     background-position: center !important;
-}
-
-img {
-    height: 100%;
 }
 
 
@@ -249,29 +244,43 @@ hr {
     height: 2px;
 }
 
+.section-1--about svg,
+.section-1--about span,
+.section-2--about svg,
+.section-2--about span,
+.section-3--about svg,
+.section-3--about span {
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .section-1--about,
 .section-2--about,
 .section-3--about {
     margin: 20px auto;
     padding-top: 30px;
+    line-height: 1.5rem;
 }
 
 .section-1--about {
     border: 2px solid white;
     background-color: rgba(233, 95, 226, 0.2);
     border-radius: 10px;
+    text-align: center;
 }
 
 .section-1--about svg,
 .section-2--about svg,
 .section-3--about svg {
     animation: tilt 5s linear 2s infinite;
+    fill: rgb(255, 123, 0);
 }
 
 .section-title {
-    padding: 15px;
+    padding: 15px 5px;
     font-size: 1.5rem;
     text-transform: uppercase;
+    color: whitesmoke;
 }
 
 h4 {
@@ -330,8 +339,8 @@ h4 {
     padding: 4em 2em 0em 2em;
     position: relative;
     color: #fafafa;
-    border-left: 1px solid;
-}
+    border-left: 2px solid rgb(255, 123, 0);
+} 
 
 .timeline-item p {
     padding: 0;
@@ -352,25 +361,19 @@ h4 {
 }
 
 .timeline-item:after {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     display: block;
     top: 2.4em;
     position: absolute;
-    left: -6px;
-    border-radius: 12px;
+    left: -8px;
+    border-radius: 15px;
     content: '';
-    background-color: #fafafa;
+    background-color: rgb(255, 123, 0);
 }
 
 .history-items {
     margin-bottom: 30px;
-}
-
-.timeline-item {
-    position: relative;
-    color: white;
-    border-left: 2px solid;
 }
 
 .skills-wrapper {
@@ -380,6 +383,7 @@ h4 {
 
 .skills-title {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .skill p {
@@ -466,8 +470,10 @@ div.footer-contact {
     padding-right: 0;
     width: 100%;
     height: auto;
-    margin: 20px 0 0;
+    margin-top: 20px;
+    margin-bottom: 0;
     box-shadow: inset 0 0 10px;
+    bottom: 0;
 }
 
 div.footer-contact {
@@ -477,7 +483,7 @@ div.footer-contact {
 }
 
 div.footer-home {
-    background: rgba(233, 95, 226, 0.2);
+    background: rgba(121, 25, 121, 0.2);
     border-top: 1px solid white;
 }
 
@@ -490,11 +496,7 @@ div.footer-resume {
 /********************************Social Media links behaviour on Footer********************************/
 
 .list-social {
-    margin: 20px auto;
-}
-
-.list-inline-item:last-child {
-    margin-right: initial;
+    margin: 20px 5px;
 }
 
 .list-inline-item svg {
@@ -507,7 +509,7 @@ div.footer-resume {
 }
 
 .home-social svg:hover {
-    fill: rgba(206, 40, 206, 0.8);
+    fill: rgba(241, 28, 241, 0.8);
     animation: zoom 0.3s ease-out;
 }
 
@@ -539,7 +541,8 @@ div.footer-resume {
     font-weight: 700;
 }
 
-button.btn-cta:hover {
+button.btn-cta:hover,
+.modal-footer button.btn-cta:hover {
     background-color: white;
     color: rgb(221, 13, 13);
     font-weight: 500;
@@ -552,6 +555,12 @@ button.btn-cta:hover {
     color: white;
     text-align: center;
     height: 40px;
+}
+
+.modal-body form input:focus,
+.modal-body form textarea:focus {
+    background-color: salmon;
+    color: white;
 }
 
 .btn-cta--brown {
@@ -622,26 +631,57 @@ button.btn-cta:hover {
 
 /********************** Media Queries *************************/
 
-@media (max-width: 769px) {
-    nav {
-        height: auto;
-        justify-content: space-around;
-        position: sticky;
-        top: 0;
-    }
-    h4 {
+@media (max-width: 992px) {
+    .section-1--about,
+    .section-2--about,
+    .section-3--about {
         text-align: center;
     }
 }
 
-@media (max-width: 579px) {
-    nav {
-        height: 70px;
+@media (max-width: 769px) {
+    nav ul {
+        height: 100vh;
         justify-content: space-around;
-        position: sticky;
-        top: 0;
     }
     h4 {
         text-align: center;
+    }
+    .short-desc,
+    .education-wrapper,
+    .work-wrapper,
+    .skills-wrapper,
+    div.footer-home,
+    div.footer-resume,
+    div.footer-contact {
+        text-align: center;
+    }
+}
+
+@media (max-width: 578px) {
+    nav ul {
+        height: 100vh;
+        justify-content: space-around;
+    }
+    .section-2--about {
+        margin-bottom: 0;
+    }
+    .section-3--about {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    nav ul {
+        height: 70px;
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+    .about-container,
+    .resume-container,
+    .contact-container {
+        height: calc(100vh - 70px);
     }
 }

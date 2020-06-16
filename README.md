@@ -28,28 +28,28 @@ functionality.
 
 The website was designed to provide a quick insight into my work for existing or potential customers who would be interested in starting a work/business relationship with myself and where they could gather key details about what I do. This user category includes of course recruiters.
 
-I went for a vertical layout to catch users' attention (as most Resume pages have a landspace layout design) and aimed to keep the this organized, each part of the page to encompass relevant information which is not very detailed and would risk to lose the interest of a reader.
-The font family I chose to go with is Poppins with fallback to sans-serif, as I find it to have a modern touch with slightly rounded forms, Italic and Bold, where I used the Italic style for description and/or instruction purposes. The white color for font was used throughout the whole website for consistency and to ensure a good contrast level with the colorful backgrounds.
-
-The specific colors the button would take when hovered over by a User are coded to reflect same coloring with the backgrounds of each page make it more intuitive for them to corelate sections with information.
-
-I also put at the users' disposal the Image Slider showing three pictures of me as everyone is keen to put a face to the name when starting a collaboration. This was also directed to create some nice space for the browsing experience and satisfy curiosity. Initially the Slider used was a standard Carousel element from Bootstrap4 library but it gave a dull feeling not having any labels for the pictures. Thus I decided to upgrade this to the version with labels and indicators where I could insert my name and title, both with box-shadow writing paired with specific background coloring.
-
-For a better User Experience I have animated the social media icons when hovered to create a more lively feeling of the website (suggesting interactivity) and a cool visual effect. I have also added a customised scrollbar to create a nice visual effect and emphasize this way the attention to all design details.
-
-Lastly, to increase User Experience I changed layout for different screen sizes, of greater importance to mention the website viewed on Mobile and Tablets drops the Carousel section which is no longer displayed.
-This way I would no longer have my name displayed anywhere on the website other than on Desktop view and so I created and replaced displaying "about ME" header with an animated section reading "NORBERT LANG / about myself".
+* I went for a vertical layout to catch users' attention (as most Resume pages have a landspace layout design) and aimed to keep the this organized, each part of the page to encompass relevant information which is not very detailed and would risk to lose the interest of a reader.
+* The font family I chose to go with is Poppins with fallback to sans-serif, as it suggests a modern touch with slightly rounded forms, Italic and Bold styles were used, the Italic style for description and/or instructions purposes.
+* The white color for font was used throughout the whole website for consistency and to ensure a good contrast level with the colorful backgrounds.
+* Specific colors were used for the navigation buttons when hovered over by the User, were coded to depict the same coloring with the backgrounds of each page, make it more intuitive for them to corelate sections with information
+  e.g. Purple for AboutME, Green for Experience and SKills, Red for Contact and Orange for Download.
+* Users have at their disposal the Image Slider showing three pictures of me as everyone is keen to put a face to the name when starting a collaboration. This was also directed to create some nice space for the browsing experience and satisfy curiosity. 
+  The version used is with labels and indicators, User can scroll through the pictures so it adds an interactivity sense to the overall UX. Captions on the pictures were used as placeholders for my name and title, both writings accompanied by box-shadow effects paired with specific background coloring as aforementioned.
+* For a better User Experience the social media icons are animated on hover to create a more lively feeling of the website (suggesting again some interactivity) and the hovering colors again match the theme of each page.
+* A customised scrollbar is meant to create a nice visual effect and emphasize to users my thorough attention to all details of design.
+* Lastly, to increase User Experience the layout for different screen sizes, worth to mention the website viewed on Mobile and Tablets drops the Carousel section which is no longer displayed.
+  Therefore my name is displayed instead as an animated section reading "NORBERT LANG / about myself" replacing the "about ME" header from the main page.
 
 Wireframes used to crop out the layout of the website (index.html page) for each screen size:
 
 ### Desktop
-https://github.com/Nor8ie/1st-Milestone-Project/blob/ef5c9175e0e9355385e9929b70864cf69655c1cb/assets/wireframes-figma/desktop-view.pdf
+(https://github.com/Nor8ie/1st-Milestone-Project/blob/ef5c9175e0e9355385e9929b70864cf69655c1cb/assets/wireframes-figma/desktop-view.pdf)
 
 ### Tablet
-https://github.com/Nor8ie/1st-Milestone-Project/blob/ef5c9175e0e9355385e9929b70864cf69655c1cb/assets/wireframes-figma/tablet-view.pdf
+(https://github.com/Nor8ie/1st-Milestone-Project/blob/ef5c9175e0e9355385e9929b70864cf69655c1cb/assets/wireframes-figma/tablet-view.pdf)
 
 ### Mobile
-https://github.com/Nor8ie/1st-Milestone-Project/blob/ef5c9175e0e9355385e9929b70864cf69655c1cb/assets/wireframes-figma/mobile-view.pdf
+(https://github.com/Nor8ie/1st-Milestone-Project/blob/ef5c9175e0e9355385e9929b70864cf69655c1cb/assets/wireframes-figma/mobile-view.pdf)
 
 
 ## Features
@@ -92,9 +92,9 @@ Below is a list of technologies I have used to build out my site.
 * [Icon Monstr](https://iconmonstr.com/) - used this source to import all my icons used throughout the website, including social media ones (in SVG format);
 * [W3Schools](https://www.w3schools.com/) - used to better understand functionality of Nav Bars, position, box-shadow properties, pseudo-elements, opacity etc.
 * [YouTube](https://www.youtube.com/) - used the platform to explore recommendations for good and slick designs, ways to create animations, navigation bars, HTML and CSS tricks. Main channels used for inspiration were:
-- Dev Ed (https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q);
-- The Net Ninja (https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg);
-- Academind (https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w);
+    - Dev Ed (https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q);
+    - The Net Ninja (https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg);
+    - Academind (https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w);
 
 
 
@@ -103,7 +103,7 @@ Below is a list of technologies I have used to build out my site.
 I have intensively used the Developer Tool of my browser (Chrome) to inspect and fix the code and behaviour of elements to ensure it was inline with the concept and layout of the website.
 During every stage I made sure the development was working fine across various screen sizes helping me to think of further improvements and changes to be made. 
 This tool was exceptionally helpful when sorting out the behaviour of the Navigation Bar as I realized this way it was better to not display certain information or sections on smaller screens and to address in a more efficient way the breakpoints of the viewport I needed to tackle to create a smooth and easthetic transition of the content.
-(for example in early stages I had addressed only 2 breakpoints 768px and 578px but later on it transpired that it was more functional to tackle 4: 992px, 769px, 578px and 575px).
+(for example in early stages I had addressed only 2 breakpoints, 768px and 578px but later on it transpired that it was more functional to tackle 5: 992px, 769px, 578px, 575px and 340px).
 
 To make sure the website would be responsive across different mainstream browser I've always looked up this information on the source website (www.getbootstrap.com) when I was deciding which classes and functionality to use. 
 Example: initially wanted to use sticky property for the navbar to fix it to the top when website was in Mobile view but then found another solution to achieve the same result as I read sticky is not supported on multiple browsers.
@@ -116,13 +116,15 @@ On other occasions when I was facing difficulties with my code I would check sol
 ## Bugs
 ---
 
-During the development of the Project I was not sure which grid-system (CSS or Bootstrap) to use for creating the desired layout. I have made several trials to only use CSS, as I wasn't too comfortable and clear how to use one provided by Bootstrap. Eventually I realised it would become difficult to attempt to make all the content to be responsive across devices through Media Queries.
+During the development of the Project I was not sure which grid-system (CSS or Bootstrap) to use for creating the desired layout. I have made several trials to only use CSS, as I wasn't too comfortable and clear how to use one provided by Bootstrap. Eventually I realised it would become a great challenge to attempt to make all content responsive across devices through Media Queries.
 
 Secondly I tried CSS-Grid system which has been nice to play around with and quite effective to achieve responsiveness but then realized I needed to use other Bootstrap elements and as advised by my mentor Reuben Ferrante it was best to use Bootstrap to create the foundation of the layout.
 
-A serious milestone in the development of this Project I encountered with the sorting out the Navigation Bar functionality from a left hand side position in Desktop view to top horizontal on Mobile. Tried out different position properties to eventually find the "relative" value to be effective in conjunction with setting a height for the <nav ul> element and applying a formula to compute the total height of the rest of the content by substracting the height of the <nav ul> element.
+A serious milestone in the development of this Project I encountered whilst sorting out the Navigation Bar functionality, for it to move from left hand side position in Desktop view to top horizontal on Mobile. 
+Tried out different position properties to eventually find the "relative" value to be effective in conjunction with setting a height for the <nav ul> element and applying a formula to compute the total height remaining for the rest of content. Flexbox properties also deemed to be of great help.
 
-I used a contact form by putting in place a Bootstrap Modal which I customized and added two "required" attributes for Email and Message fields. When typing in the email address without the "@" sign it doesn't flag up an warning message.
+I used a contact form by putting in place a Bootstrap Modal which I customized and added two "required" attributes for Email and Message input fields.
+When typing in the email address without the "@" sign it doesn't flag up a warning message.
 
 ## Deployment
 ---

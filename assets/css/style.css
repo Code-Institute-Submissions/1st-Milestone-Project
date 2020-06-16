@@ -670,6 +670,10 @@ button.btn-cta:hover,
         margin-top: 0px;
         margin-bottom: 40px;
     }
+
+    h4 {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 575px) {
@@ -683,5 +687,74 @@ button.btn-cta:hover,
     .resume-container,
     .contact-container {
         height: calc(100vh - 70px);
+    }
+}
+
+@media (max-width: 340px) {
+    .nav-item.pill-1,
+    .nav-item.pill-2,
+    .nav-item.pill-3, .nav-item.pill-4 {
+        padding: 0px;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    .short-desc {
+        font-size: 1rem;
+    }
+
+    .history h5 {
+        margin-top: 8px;
+    }
+
+    .timeline-item:before {
+        left: 1rem;
+    }
+
+    div.timeline-item {
+        padding: 48px 16px 0px;
+    }
+    }
+
+    .section-title,
+    .education-wrapper span,
+    .work-wrapper span,
+    .skills-wrapper span {
+        font-size: 1rem;
+    }
+
+    p.description,
+    .skill p,
+    .history p,
+    .button-container button.btn-cta {
+        font-size: 0.8rem;
+    }
+
+    .history h5 {
+        font-size: 0.9rem;
+    }
+
+    p.description {
+        margin-bottom: 0;
+    }
+
+    .contact-item {
+        padding: 10px 5px 10px 15px;
+    }
+
+    .contact-item.address,
+    .contact-item.telephone,
+    .contact-item.email {
+        line-height: 0px;
+        font-size: 0.8rem;
+    }
+
+    .contact-item.address svg,
+    .contact-item.telephone svg,
+    .contact-item.email svg {
+        width: 24px; 
+        height: 24px;
     }
 }
